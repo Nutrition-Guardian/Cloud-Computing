@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJDaGFpcmFuaSIsImVtYWlsIjoiZW1haWxAZ21haWwuY29tIiwiaWF0IjoxNzAxOTAwNzE5LCJleHAiOjE3MDE5MDA3MzR9.B9Sjl4oOcKbVF27b6Z8rWhDTQFfc3sjwEr58G58FjVc
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Chairani",
+    "email": "email@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "email@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
